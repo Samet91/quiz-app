@@ -99,3 +99,38 @@ body {
 .im i {
   color: white;
 }
+.text-area {
+  background-color: rgb(179, 186, 190);
+}
+.tags {
+  border: 1px solid;
+  padding: 1px 10px;
+  border-radius: 7px;
+  font-size: 20px;
+  background-color: rgb(141, 161, 161);
+}
+.submit {
+  width: 50%;
+  margin: 30px;
+}
+.add-answer {
+  color: rgb(81, 201, 11);
+}
+.add-question {
+  color: brown;
+}
+.profile {
+  margin: 30px;
+}
+.yourself {
+  border: 1px solid;
+  padding: 1px 10px;
+  border-radius: 7px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.skills {
+  display: flex;
+  margin: 20px;
+  font-size: 25px;
+}
