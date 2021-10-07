@@ -47,7 +47,7 @@ body {
 }
 
 .main-card__bookmark {
-  position: absolute;     
+  position: absolute;
   right: 20px;
   top: -5px;
 }
@@ -100,6 +100,8 @@ body {
 
 .text-area {
   background-color: rgb(179, 186, 190);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
 }
 .tags {
   border: 1px solid;
@@ -127,21 +129,36 @@ body {
   border-radius: 7px;
   font-size: 20px;
   font-family: sans-serif;
+  background-color: thistle;
 }
 .skills {
   display: flex;
   margin: 20px;
   font-size: 25px;
 }
-.home{
-  color:white
-}
-.bookmark{
+.home {
   color: white;
 }
-.paper{
+.bookmark {
   color: white;
 }
-.person{
+.paper {
   color: white;
+}
+.person {
+  color: white;
+}
+.navigation__item:hover,
+.main-card__bookmark:hover {
+  color: white;
+}
+.img-profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-start;
+}
+.img-name {
+  color: blueviolet;
+  font-size: 20px;
+  justify-items: stretch;
 }
