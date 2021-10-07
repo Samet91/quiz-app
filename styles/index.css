@@ -43,12 +43,13 @@ body {
   border-radius: 20px;
   flex-direction: column;
   padding: 20px;
+  position: relative;
 }
 
 .main-card__bookmark {
-  position: relative;
-  right: -170px;
-  top: -25px;
+  position: absolute;     
+  right: 20px;
+  top: -5px;
 }
 
 .Que {
@@ -96,9 +97,7 @@ body {
   display: block;
   color: black;
 }
-.im i {
-  color: white;
-}
+
 .text-area {
   background-color: rgb(179, 186, 190);
 }
@@ -133,4 +132,16 @@ body {
   display: flex;
   margin: 20px;
   font-size: 25px;
+}
+.home{
+  color:white
+}
+.bookmark{
+  color: white;
+}
+.paper{
+  color: white;
+}
+.person{
+  color: white;
 }
