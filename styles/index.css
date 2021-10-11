@@ -19,7 +19,7 @@ body {
   text-align: center;
   display: grid;
   grid-template-rows: 60px auto 60px;
-  height: 100vh;
+  height: 99vh;
 }
 
 .header {
@@ -32,39 +32,41 @@ body {
   margin: 0;
 }
 
-.main-main {
+.home-page {
   overflow-y: auto;
 }
 
-.main-card {
+.card {
   background-color: rgb(205, 203, 223);
   display: flex;
-  margin-top: 20px;
+  margin: 20px;
   border-radius: 20px;
   flex-direction: column;
   padding: 20px;
   position: relative;
+  box-shadow: 5px 5px 15px 5px #10b8ce;
+  
 }
 
-.main-card__bookmark {
+.card__bookmark {
   position: absolute;
   right: 20px;
   top: -5px;
 }
 
-.Que {
+.card__question {
   display: flex;
   font-size: 30px;
   margin: 8px;
   color: blue;
 }
 
-.question {
+.card__text {
   font-size: 20px;
   color: rgb(50, 70, 85);
 }
 
-.main-card__button {
+.card__button {
   align-self: center;
   font-size: 20px;
   background-color: rgb(39, 145, 145);
@@ -87,7 +89,7 @@ body {
   border-radius: 5px;
   display: flex;
   justify-content: space-around;
-  padding: 10px;
+  padding: 20px;
 }
 
 .navigation__link {
@@ -102,8 +104,11 @@ body {
   background-color: rgb(179, 186, 190);
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 15px;
+  margin-top: -40px;
 }
 .tags {
+  display: flex;
+  align-self: center;
   border: 1px solid;
   padding: 1px 10px;
   border-radius: 7px;
@@ -130,6 +135,7 @@ body {
   font-size: 20px;
   font-family: sans-serif;
   background-color: thistle;
+  
 }
 .skills {
   display: flex;
@@ -149,16 +155,18 @@ body {
   color: white;
 }
 .navigation__item:hover,
-.main-card__bookmark:hover {
+.card__bookmark:hover {
   color: white;
 }
-.img-profile {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: flex-start;
+.image {
+  display: flex;
+  justify-content: center;
 }
-.img-name {
+.name {
   color: blueviolet;
   font-size: 20px;
   justify-items: stretch;
+}
+nav{
+  bottom: 0px;
 }
