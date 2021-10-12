@@ -19,7 +19,7 @@ body {
   text-align: center;
   display: grid;
   grid-template-rows: 60px auto 60px;
-  height: 99vh;
+  height: 100vh;
 }
 
 .header {
@@ -32,7 +32,7 @@ body {
   margin: 0;
 }
 
-.home-page {
+.app {
   overflow-y: auto;
 }
 
@@ -45,7 +45,6 @@ body {
   padding: 20px;
   position: relative;
   box-shadow: 5px 5px 15px 5px #10b8ce;
-  
 }
 
 .card__bookmark {
@@ -108,12 +107,13 @@ body {
 }
 .tags {
   display: flex;
-  align-self: center;
-  border: 1px solid;
-  padding: 1px 10px;
-  border-radius: 7px;
-  font-size: 20px;
-  background-color: rgb(141, 161, 161);
+  align-content: center;
+  display: inline;
+  border: solid 2px;
+  padding: 3px;
+  border-radius: 5px;
+  color: #612b68;
+  
 }
 .submit {
   width: 50%;
@@ -135,29 +135,20 @@ body {
   font-size: 20px;
   font-family: sans-serif;
   background-color: thistle;
-  
 }
 .skills {
   display: flex;
   margin: 20px;
   font-size: 25px;
 }
-.home {
+.home,
+.bookmark,
+.paper,
+.person, 
+.bookmark--active {
   color: white;
 }
-.bookmark {
-  color: white;
-}
-.paper {
-  color: white;
-}
-.person {
-  color: white;
-}
-.navigation__item:hover,
-.card__bookmark:hover {
-  color: white;
-}
+
 .image {
   display: flex;
   justify-content: center;
@@ -167,6 +158,10 @@ body {
   font-size: 20px;
   justify-items: stretch;
 }
-nav{
+nav {
   bottom: 0px;
 }
+.hidden {
+  display: none;
+}
+
