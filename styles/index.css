@@ -32,38 +32,40 @@ body {
   margin: 0;
 }
 
-.main-main {
+.app {
   overflow-y: auto;
 }
 
-.main-card {
+.card {
   background-color: rgb(205, 203, 223);
   display: flex;
-  margin-top: 20px;
+  margin: 20px;
   border-radius: 20px;
   flex-direction: column;
   padding: 20px;
-}
-
-.main-card__bookmark {
   position: relative;
-  right: -170px;
-  top: -25px;
+  box-shadow: 5px 5px 15px 5px #10b8ce;
 }
 
-.Que {
+.card__bookmark {
+  position: absolute;
+  right: 20px;
+  top: -5px;
+}
+
+.card__question {
   display: flex;
   font-size: 30px;
   margin: 8px;
   color: blue;
 }
 
-.question {
+.card__text {
   font-size: 20px;
   color: rgb(50, 70, 85);
 }
 
-.main-card__button {
+.card__button {
   align-self: center;
   font-size: 20px;
   background-color: rgb(39, 145, 145);
@@ -86,7 +88,7 @@ body {
   border-radius: 5px;
   display: flex;
   justify-content: space-around;
-  padding: 10px;
+  padding: 20px;
 }
 
 .navigation__link {
@@ -96,18 +98,22 @@ body {
   display: block;
   color: black;
 }
-.im i {
-  color: white;
-}
+
 .text-area {
   background-color: rgb(179, 186, 190);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  margin-top: -40px;
 }
 .tags {
-  border: 1px solid;
-  padding: 1px 10px;
-  border-radius: 7px;
-  font-size: 20px;
-  background-color: rgb(141, 161, 161);
+  display: flex;
+  align-content: center;
+  display: inline;
+  border: solid 2px;
+  padding: 3px;
+  border-radius: 5px;
+  color: #612b68;
+  
 }
 .submit {
   width: 50%;
@@ -128,9 +134,34 @@ body {
   border-radius: 7px;
   font-size: 20px;
   font-family: sans-serif;
+  background-color: thistle;
 }
 .skills {
   display: flex;
   margin: 20px;
   font-size: 25px;
 }
+.home,
+.bookmark,
+.paper,
+.person, 
+.bookmark--active {
+  color: white;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+.name {
+  color: blueviolet;
+  font-size: 20px;
+  justify-items: stretch;
+}
+nav {
+  bottom: 0px;
+}
+.hidden {
+  display: none;
+}
+
