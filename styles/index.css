@@ -12,7 +12,6 @@ body {
   margin: 0;
   display: grid;
   grid-template-rows: auto 60px;
- 
 }
 .wrapper {
   display: flex;
@@ -46,10 +45,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow:
-  0px 2.4px 5.3px rgba(0, 0, 0, 0.075),
-  0px 19px 42px rgba(0, 0, 0, 0.15)
-;
+  box-shadow: 0 2.4px 5.3px rgba(0, 0, 0, 0.075),
+    0 19px 42px rgba(0, 0, 0, 0.15);
 }
 
 .card__bookmark {
@@ -86,24 +83,21 @@ body {
   border-radius: 7px;
   font-size: 20px;
   background-color: rgb(141, 161, 161);
-  
 }
 
-.list-linebreak{
+.list-linebreak {
   display: block;
 }
 
 .text-area {
   background-color: rgb(179, 186, 190);
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 15px;
   margin-top: -40px;
   max-width: 300px;
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  
- 
 }
 .tags {
   align-content: center;
@@ -160,7 +154,7 @@ body {
   justify-items: stretch;
 }
 nav {
-  bottom: 0px;
+  bottom: 0;
 }
 .hidden {
   display: none;
@@ -175,6 +169,6 @@ nav {
 }
 .navigation__button {
   display: block;
-  color: black;
   display: contents;
+  color: black;
 }

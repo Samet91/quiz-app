@@ -1,218 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css"
+    />
+    <script defer src="styles/index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz-App</title>
-  <link rel="stylesheet" href="styles/index.css" />
-  <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" />
-  <script defer src="styles/index.js"></script>
-</head>
-
-<body data-js="body" >
-  <main class="wrapper">
-
-    <section data-js="home-home" class="">
-      <header class="header">Quiz-App</header>
-      <div data-js="card" class="card">
-        <div data-js="bookmark" class="card__bookmark js-bookmark">
-          <i class="im im-bookmark"></i>
+  <body data-js="body">
+    <main class="wrapper">
+      <section data-js="home-home" class="">
+        <header class="header">Quiz-App</header>
+        <div data-js="card" class="card">
+          <div data-js="bookmark" class="card__bookmark js-bookmark">
+            <i class="im im-bookmark"></i>
+          </div>
+          <h3 class="card__question">Question:</h3>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur?
+          </p>
+          <button data-js="card__button" class="card__button">
+            <span data-js="show">Show</span
+            ><span data-js="hide" class="hidden">Hide</span> answer
+          </button>
+          <p data-js="card__text--answer" class="hidden">Js and Rct</p>
+          <nav class="card__answer" role="list">
+            <ul class="list-linebreak">
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JS</li>
+              <li class="tag">Rct</li>
+            </ul>
+          </nav>
         </div>
-        <h3 class="card__question">Question:</h3>
-        <p class="card__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur?
-        </p>
-        <button data-js="card__button" class="card__button">
-          <span data-js="show">Show</span><span data-js="hide" class="hidden">Hide</span> answer
-        </button>
-        <p data-js="card__text--answer" class="hidden">Js and Rct</p>
+
+        <div data-js="card" class="card">
+          <div data-js="bookmark" class="card__bookmark">
+            <i class="im im-bookmark"></i>
+          </div>
+          <h3 class="card__question">Question:</h3>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur?
+          </p>
+          <button data-js="card__button" class="card__button">
+            <span data-js="show">Show</span
+            ><span data-js="hide" class="hidden">Hide</span> answer
+          </button>
+          <p data-js="card__text--answer" class="hidden">Js and Rct</p>
+
+          <nav class="card__answer" role="list">
+            <ul>
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JS</li>
+              <li class="tag">Rct</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div data-js="card" class="card">
+          <div data-js="bookmark" class="card__bookmark">
+            <i class="im im-bookmark"></i>
+          </div>
+          <h3 class="card__question">Question:</h3>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur?
+          </p>
+          <button data-js="card__button" class="card__button">
+            <span data-js="show">Show</span
+            ><span data-js="hide" class="hidden">Hide</span> answer
+          </button>
+          <p data-js="card__text--answer" class="hidden">Js and Rct</p>
+          <nav class="card__answer" role="list">
+            <ul>
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JS</li>
+              <li class="tag">Rct</li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- here is the bookmark page -->
+      <section data-js="bookmark-home" class="home-page hidden">
+        <header class="header">Bookmarks</header>
+
+        <div data-js="card" class="card">
+          <div data-js="bookmark" class="card__bookmark">
+            <i class="im im-bookmark"></i>
+          </div>
+          <h3 class="card__question">Question:</h3>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur?
+          </p>
+          <button data-js="card__button" class="card__button">
+            <span data-js="show">Show</span
+            ><span data-js="hide" class="hidden">Hide</span> answer
+          </button>
+          <p data-js="card__text--answer" class="hidden">Js and Rct</p>
+          <nav class="answer" role="list">
+            <ul>
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JS</li>
+              <li class="tag">Rct</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div data-js="card" class="card">
+          <div data-js="bookmark" class="card__bookmark">
+            <i class="im im-bookmark"></i>
+          </div>
+          <h3 class="card__question">Question:</h3>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur?
+          </p>
+          <button data-js="card__button" class="card__button">
+            <span data-js="show">Show</span
+            ><span data-js="hide" class="hidden">Hide</span> answer
+          </button>
+          <p data-js="card__text--answer" class="hidden">Js and Rct</p>
+          <nav class="answer" role="list">
+            <ul>
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JS</li>
+              <li class="tag">Rct</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div data-js="card" class="card">
+          <div data-js="bookmark" class="card__bookmark">
+            <i class="im im-bookmark"></i>
+          </div>
+          <h3 class="card__question">Question:</h3>
+          <p class="card__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur?
+          </p>
+          <button data-js="card__button" class="card__button">
+            <span data-js="show">Show</span
+            ><span data-js="hide" class="hidden">Hide</span> answer
+          </button>
+          <p data-js="card__text--answer" class="hidden">Js and Rct</p>
+          <nav class="answer" role="list">
+            <ul>
+              <li class="tag">HTML</li>
+              <li class="tag">CSS</li>
+              <li class="tag">JS</li>
+              <li class="tag">Rct</li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- here is the create page -->
+      <section data-js="create-home" class="home-page hidden">
+        <header class="header">Create</header>
+
+        <div class="card">
+          <h2 class="add-question">Add question</h2>
+          <h3 class="home-card__question"></h3>
+          <label class="label" for="question"
+            >Question:
+            <small data-js="smallText" class="hidden"
+              >(<span data-js="amountLeft"></span> characters left)</small
+            >
+          </label>
+          <p>sadasdasdasdasdasdasdsa</p>
+          <textarea class="text-area" cols="20" rows="8"></textarea>
+        </div>
+
+        <div class="card">
+          <h2 class="add-answer">Add answer</h2>
+          <h3 class="home-card__question"></h3>
+          <textarea class="text-area" cols="20" rows="8"></textarea>
+        </div>
+
+        <p class="tags">Lorem, ipsum, dolor, sit</p>
+
+        <button class="card__button submit">Logout</button>
+      </section>
+      <!-- here is the profile page -->
+      <section data-js="profile-home" class="hidden">
+        <header class="header">Profile</header>
+
+        <div class="profile image">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Hz_2j07dA2TNjmR2AhCIVOyFEz9Vtjb8Dg&usqp=CAU"
+            alt=""
+          />
+          <p class="name">Max Meyer</p>
+        </div>
+        <div class="yourself-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis perferendis nulla blanditiis id saepe architecto?
+            Repellat, ipsa at! Sapiente explicabo voluptates quae iusto?
+            Distinctio, incidunt vel eos omnis vero explicabo!
+          </p>
+        </div>
+        <p class="skills">Skills</p>
         <nav class="card__answer" role="list">
           <ul class="list-linebreak">
             <li class="tag">HTML</li>
             <li class="tag">CSS</li>
             <li class="tag">JS</li>
             <li class="tag">Rct</li>
+            <li class="tag">Node.js</li>
           </ul>
         </nav>
-      </div>
+        <button class="card__button submit">Logout</button>
+      </section>
+    </main>
 
-      <div data-js="card" class="card">
-        <div data-js="bookmark" class="card__bookmark"><i class="im im-bookmark"></i></div>
-        <h3 class="card__question">Question:</h3>
-        <p class="card__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur?
-        </p>
-        <button data-js="card__button" class="card__button">
-          <span data-js="show">Show</span><span data-js="hide" class="hidden">Hide</span> answer
-        </button>
-        <p data-js="card__text--answer" class="hidden">Js and Rct</p>
-        
-        <nav class="card__answer" role="list">
-          <ul>
-            <li class="tag">HTML</li>
-            <li class="tag">CSS</li>
-            <li class="tag">JS</li>
-            <li class="tag">Rct</li>
-          </ul>
-        </nav>
-      </div>
-
-      <div data-js="card" class="card">
-        <div data-js="bookmark" class="card__bookmark"><i class="im im-bookmark"></i></div>
-        <h3 class="card__question">Question:</h3>
-        <p class="card__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur?
-        </p>
-        <button data-js="card__button" class="card__button">
-          <span data-js="show">Show</span><span data-js="hide" class="hidden">Hide</span> answer
-        </button>
-        <p data-js="card__text--answer" class="hidden">Js and Rct</p>
-        <nav class="card__answer" role="list">
-          <ul>
-            <li class="tag">HTML</li>
-            <li class="tag">CSS</li>
-            <li class="tag">JS</li>
-            <li class="tag">Rct</li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <!-- here is the bookmark page -->
-    <section data-js="bookmark-home" class="home-page hidden">
-      <header class="header">Bookmarks</header>
-
-      <div data-js="card" class="card">
-        <div data-js="bookmark" class="card__bookmark"><i class="im im-bookmark"></i></div>
-        <h3 class="card__question">Question:</h3>
-        <p class="card__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur?
-        </p>
-        <button data-js="card__button" class="card__button">
-          <span data-js="show">Show</span><span data-js="hide" class="hidden">Hide</span> answer
-        </button>
-        <p data-js="card__text--answer" class="hidden">Js and Rct</p>
-        <nav class="answer" role="list">
-          <ul>
-            <li class="tag">HTML</li>
-            <li class="tag">CSS</li>
-            <li class="tag">JS</li>
-            <li class="tag">Rct</li>
-          </ul>
-        </nav>
-      </div>
-
-      <div data-js="card" class="card">
-        <div data-js="bookmark" class="card__bookmark"><i class="im im-bookmark"></i></div>
-        <h3 class="card__question">Question:</h3>
-        <p class="card__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur?
-        </p>
-        <button data-js="card__button" class="card__button">
-          <span data-js="show">Show</span><span data-js="hide" class="hidden">Hide</span> answer
-        </button>
-        <p data-js="card__text--answer" class="hidden">Js and Rct</p>
-        <nav class="answer" role="list">
-          <ul>
-            <li class="tag">HTML</li>
-            <li class="tag">CSS</li>
-            <li class="tag">JS</li>
-            <li class="tag">Rct</li>
-          </ul>
-        </nav>
-      </div>
-
-      <div data-js="card" class="card">
-        <div data-js="bookmark" class="card__bookmark"><i class="im im-bookmark"></i></div>
-        <h3 class="card__question">Question:</h3>
-        <p class="card__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur?
-        </p>
-        <button data-js="card__button" class="card__button">
-          <span data-js="show">Show</span><span data-js="hide" class="hidden">Hide</span> answer
-        </button>
-        <p data-js="card__text--answer" class="hidden">Js and Rct</p>
-        <nav class="answer" role="list">
-          <ul>
-            <li class="tag">HTML</li>
-            <li class="tag">CSS</li>
-            <li class="tag">JS</li>
-            <li class="tag">Rct</li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-    <!-- here is the create page -->
-    <section data-js="create-home" class="home-page hidden">
-      <header class="header">Create</header>
-
-      <div class="card">
-        <h2 class="add-question">Add question</h2>
-        <h3 class="home-card__question"></h3>
-        <label class="label" for="question">Question:
-          <small data-js="smallText" class="hidden">(<span data-js="amountLeft"></span> characters left)</small>
-        </label>
-        <p>sadasdasdasdasdasdasdsa</p>
-        <textarea class="text-area" cols="20" rows="8"></textarea>
-      </div>
-
-      <div class="card">
-        <h2 class="add-answer">Add answer</h2>
-        <h3 class="home-card__question"></h3>
-        <textarea class="text-area" cols="20" rows="8"></textarea>
-      </div>
-
-      <p class="tags">Lorem, ipsum, dolor, sit</p>
-
-      <button class="card__button submit">Logout</button>
-    </section>
-    <!-- here is the profile page -->
-    <section data-js="profile-home" class="hidden">
-      <header class="header">Profile</header>
-
-      <div class="profile image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Hz_2j07dA2TNjmR2AhCIVOyFEz9Vtjb8Dg&usqp=CAU"
-          alt="" />
-        <p class="name">Max Meyer</p>
-      </div>
-      <div class="yourself-text">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-          Perspiciatis perferendis nulla blanditiis id saepe architecto?
-          Repellat, ipsa at! Sapiente explicabo voluptates quae iusto?
-          Distinctio, incidunt vel eos omnis vero explicabo!
-        </p>
-      </div>
-      <p class="skills">Skills</p>
-      <nav class="card__answer" role="list">
-        <ul class="list-linebreak">
-          <li class="tag">HTML</li>
-          <li class="tag">CSS</li>
-          <li class="tag">JS</li>
-          <li class="tag">Rct</li>
-          <li class="tag">Node.js</li>
-        </ul>
-      </nav>
-      <button class="card__button submit">Logout</button>
-    </section>
-  
-  </main>
-
-  <nav  class="navigation">
-    <button class="navigation__button">
-      <i data-js="home-button" class="im im-home bookmark--active"></i>
-    </button>
-    <button class="navigation__button">
-      <i data-js="bookmark-button" class="im im-bookmark"></i>
-    </button>
-    <button class="navigation__button">
-      <i data-js="create-button" class="im im-newspaper-o"></i>
-    </button>
-    <button class="navigation__button">
-      <i data-js="profile-button" class="im im-user-circle"></i>
-    </button>
-  </nav>
-</body>
-
+    <nav class="navigation">
+      <button class="navigation__button">
+        <i data-js="home-button" class="im im-home bookmark--active"></i>
+      </button>
+      <button class="navigation__button">
+        <i data-js="bookmark-button" class="im im-bookmark"></i>
+      </button>
+      <button class="navigation__button">
+        <i data-js="create-button" class="im im-newspaper-o"></i>
+      </button>
+      <button class="navigation__button">
+        <i data-js="profile-button" class="im im-user-circle"></i>
+      </button>
+    </nav>
+  </body>
 </html>
