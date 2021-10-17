@@ -1,0 +1,18 @@
+.sectionAll {
+  display: grid;
+  grid-template-rows: 60px auto;
+}
+.header {
+  background: rgb(238, 162, 162);
+  width: 100%;
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2.4px 5.3px rgba(0, 0, 0, 0.075),
+    0 19px 42px rgba(0, 0, 0, 0.15);
+}
