@@ -10,12 +10,12 @@
       rel="stylesheet"
       href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css"
     />
-    <script defer src="styles/index.js"></script>
+    <script defer type="module" src="javascript/index.js"></script>
   </head>
 
   <body data-js="body">
     <main class="wrapper">
-      <section data-js="home-home" class="">
+      <section data-js="home-home">
         <header class="header">Quiz-App</header>
         <div data-js="card" class="card">
           <div data-js="bookmark" class="card__bookmark js-bookmark">
@@ -29,7 +29,9 @@
             <span data-js="show">Show</span
             ><span data-js="hide" class="hidden">Hide</span> answer
           </button>
-          <p data-js="card__text--answer" class="hidden">Js and Rct</p>
+          <p data-js="card__text--answer" class="hidden">
+            <span class="answer">CSS</span>
+          </p>
           <nav class="card__answer" role="list">
             <ul class="list-linebreak">
               <li class="tag">HTML</li>
@@ -166,21 +168,46 @@
 
         <div class="card">
           <h2 class="add-question">Add question</h2>
-          <h3 class="home-card__question"></h3>
-          <label class="label" for="question"
-            >Question:
-            <small data-js="smallText" class="hidden"
-              >(<span data-js="amountLeft"></span> characters left)</small
-            >
-          </label>
-          <p>sadasdasdasdasdasdasdsa</p>
-          <textarea class="text-area" cols="20" rows="8"></textarea>
+
+          <form>
+            <label class="label" for="question"
+              >Question:
+              <small data-js="smalltext" class="smalltext"
+                >(<span data-js="amountLeft"></span> characters left)</small
+              >
+            </label>
+            <textarea
+              maxlength="100"
+              data-js="question"
+              id="question"
+              name="question"
+              class="text-area"
+              cols="20"
+              rows="8"
+            ></textarea>
+          </form>
         </div>
 
         <div class="card">
           <h2 class="add-answer">Add answer</h2>
-          <h3 class="home-card__question"></h3>
-          <textarea class="text-area" cols="20" rows="8"></textarea>
+
+          <form>
+            <label class="label" for="answer"
+              >Answer:
+              <small data-js="smalltext2" class="smalltext"
+                >(<span data-js="amountLeft2"></span> characters left)</small
+              >
+            </label>
+            <textarea
+              maxlength="200"
+              data-js="answer"
+              id="answer"
+              name="answer"
+              class="text-area"
+              cols="20"
+              rows="8"
+            ></textarea>
+          </form>
         </div>
 
         <p class="tags">Lorem, ipsum, dolor, sit</p>

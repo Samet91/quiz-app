@@ -1,0 +1,13 @@
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(218, 92, 92);
+  border-radius: 5px;
+  padding: 20px;
+  position: sticky;
+}
+.navigation__button {
+  display: block;
+  display: contents;
+  color: black;
+}
