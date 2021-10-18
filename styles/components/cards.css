@@ -49,11 +49,10 @@
   background-color: rgb(179, 186, 190);
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 15px;
-  margin-top: -40px;
-  max-width: 300px;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  width: 100%;
 }
 .tags {
   align-content: center;

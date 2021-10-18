@@ -7,3 +7,15 @@
 .hidden {
   display: none;
 }
+.charactersLeft {
+  opacity: 0.3;
+}
+.answerHome {
+  border: 2px solid;
+  padding: 5px;
+  color: rgb(180, 128, 128);
+  background-color: chartreuse;
+}
+.smalltext {
+  opacity: 0.3;
+}

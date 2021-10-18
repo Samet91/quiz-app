@@ -1,18 +1,15 @@
-import { getElement } from './cards.js'
-import { getAllElements } from './cards.js'
+import { getElement } from './utility.js'
 
-const all = getAllElements('body')
+export function setupNavigation() {
+  const pageHome = getElement('home-home')
+  const pageBookmark = getElement('bookmark-home')
+  const pageCreate = getElement('create-home')
+  const pageProfile = getElement('profile-home')
 
-all.forEach(body => {
-  const pageHome = getElement('home-home', body)
-  const pageBookmark = getElement('bookmark-home', body)
-  const pageCreate = getElement('create-home', body)
-  const pageProfile = getElement('profile-home', body)
-
-  const buttonHome = getElement('home-button', body)
-  const buttonBookmark = getElement('bookmark-button', body)
-  const buttonCreate = getElement('create-button', body)
-  const buttonProfile = getElement('profile-button', body)
+  const buttonHome = getElement('home-button')
+  const buttonBookmark = getElement('bookmark-button')
+  const buttonCreate = getElement('create-button')
+  const buttonProfile = getElement('profile-button')
 
   buttonHome.addEventListener('click', () => {
     pageRemove(pageHome)
@@ -61,20 +58,20 @@ all.forEach(body => {
     removeActive(buttonCreate)
     addActive(buttonProfile)
   })
-})
+}
 
-export function pageRemove(page) {
+function pageRemove(page) {
   page.classList.remove('hidden')
 }
 
-export function pageAdd(page) {
+function pageAdd(page) {
   page.classList.add('hidden')
 }
 
-export function addActive(icon) {
+function addActive(icon) {
   icon.classList.add('bookmark--active')
 }
 
-export function removeActive(icon) {
+function removeActive(icon) {
   icon.classList.remove('bookmark--active')
 }
